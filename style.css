@@ -7,6 +7,20 @@ body {
   line-height: 1.6;
 }
 
+a {
+  color: #007acc; /* Bleu comme ton bouton */
+  text-decoration: none;
+}
+
+a:visited {
+  color: #007acc; /* Même couleur pour les liens visités */
+}
+
+a:hover {
+  color: #005f99; /* Couleur plus foncée au survol */
+}
+
+
 header {
   background: #007acc;
   color: white;
