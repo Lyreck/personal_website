@@ -7,6 +7,43 @@ body {
   line-height: 1.6;
 }
 
+/* Navigation styles */
+.main-nav {
+  margin-top: 12px;
+}
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.main-nav a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: background-color .15s, color .15s;
+}
+.main-nav a:hover,
+.main-nav a:focus {
+  background: rgba(0,0,0,0.06);
+  outline: none;
+}
+.main-nav a.active {
+  background: var(--accent, #111);
+  color: #fff;
+}
+
+.main-nav a:visited {
+  color: #ffffff; /* Même couleur pour les liens visités */
+}
+
+
 a {
   color: #007acc; /* Bleu comme ton bouton */
   text-decoration: none;
@@ -15,11 +52,6 @@ a {
 a:visited {
   color: #007acc; /* Même couleur pour les liens visités */
 }
-
-a:hover {
-  color: #005f99; /* Couleur plus foncée au survol */
-}
-
 
 header {
   background: #007acc;

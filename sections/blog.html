@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Page under construction — Léo le Douarec</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    :root{--muted:#f0f3f6;--accent:#007acc}
+    body{background:var(--muted);display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial}
+    .card{background:#fff;padding:2rem;border-radius:12px;box-shadow:0 8px 30px rgba(12,20,30,0.08);text-align:center;max-width:720px;width:92%}
+    .builder{
+      font-size:5rem;line-height:1;margin-bottom:.25rem;display:inline-block;
+      animation:float 2s ease-in-out infinite;
+      transform-origin:50% 60%;
+    }
+    @keyframes float{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-8px) rotate(-2deg)}
+    }
+    .helmet{
+      display:inline-block;margin-left:-0.35rem;background:var(--accent);color:#fff;padding:0.15rem 0.35rem;border-radius:6px;font-size:0.45em;vertical-align:top;box-shadow:0 4px 10px rgba(0,0,0,0.08)
+    }
+    h1{margin:.25rem 0 .5rem;color:#111;font-size:1.35rem}
+    p.lead{margin:.25rem 0 1rem;color:#444}
+    .hint{color:#666;font-size:.95rem;margin-bottom:1rem}
+    .actions{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap}
+    .btn{background:var(--accent);color:#fff;padding:.6rem .9rem;border-radius:8px;text-decoration:none;font-weight:500;box-shadow:0 6px 18px rgba(0,122,204,0.12)}
+    .btn:link, .btn:visited { color: #fff; } /* overrides generic a:visited */
+    .btn-muted:link, .btn-muted:visited { color: #007acc; }
+    .btn-muted{background:#f3f6f8;color:#007acc;border:1px solid #e6eef7}
+    .small{font-size:.9rem;color:#888;margin-top:.9rem}
+  </style>
+</head>
+<body>
+  <div class="card" role="main" aria-labelledby="title">
+    <div class="builder" aria-hidden="true">👷‍♂️<span class="helmet">🔧</span></div>
+    <h1 id="title">This page is under construction</h1>
+    <p class="lead">I'm a one-man show here, and still working on building this website!</p>
+
+    <div class="actions">
+      <a class="btn" href="../index.html">Back to home</a>
+      <a class="btn btn-muted" href="mailto:leo@example.com?subject=Missing%20page%20report">Report an issue</a>
+    </div>
+
+    <p class="small">Soon to be uploaded: blog posts about whatever I set my mind to.</p>
+  </div>
+</body>
+</html>
+
+<!-- /* ideas: cuckoo's egg, zoneminder and raspberry pi, zoneminder and TruVision IP cameras, */-->
